@@ -1,19 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d0d0d,100:1a1a2e&height=20&section=header" width="100%"/>
-
 ```
-██████╗ ██╗  ██████╗  ███████╗ ██████╗  ████████╗  ██████╗
-██╔══██╗██║  ██╔══██╗ ██╔════╝ ██╔══██╗ ╚══██╔══╝ ██╔═══██╗
-███████║██║  ██████╔╝ █████╗   ██████╔╝    ██║    ██║   ██║
-██╔══██║██║  ██╔══██╗ ██╔══╝   ██╔══██╗    ██║    ██║   ██║
-██║  ██║██████╔╝██████╔╝ ███████╗██║  ██║    ██║    ╚██████╔╝
-╚═╝  ╚═╝╚═════╝ ╚═════╝  ╚══════╝╚═╝  ╚═╝   ╚═╝     ╚═════╝
+ █████╗ ██╗     ██████╗ ██████╗ ██████╗ ████████╗ ██████╗ ███████╗
+██╔══██╗██║     ██╔══██╗╚════██╗██╔══██╗╚══██╔══╝██╔═████╗██╔════╝
+███████║██║     ██████╔╝ █████╔╝██████╔╝   ██║   ██║██╔██║███████╗
+██╔══██║██║     ██╔══██╗ ╚═══██╗██╔══██╗   ██║   ████╔╝██║╚════██║
+██║  ██║███████╗██████╔╝██████╔╝██║  ██║   ██║   ╚██████╔╝███████║
+╚═╝  ╚═╝╚══════╝╚═════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
 ```
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&pause=1000&color=00FF41&center=true&vCenter=true&width=700&height=50&lines=%3E+FULLSTACK+DEVELOPER+%3C;%3E+INSERT+COIN+TO+CONTINUE...+%3C;%3E+LOADING+AWESOME+CODE...+%3C;%3E+PLAYER+1+READY!+%3C)](https://git.io/typing-svg)
 
-<img src="https://img.shields.io/badge/LEVEL-99-00FF41?style=flat-square&logo=nintendo-3ds&logoColor=black&labelColor=0d0d0d&color=00FF41"/>
+<img src="https://img.shields.io/badge/LEVEL-99-00FF41?style=flat-square&labelColor=0d0d0d&color=00FF41"/>
 <img src="https://img.shields.io/badge/STATUS-CODING-FF0080?style=flat-square&labelColor=0d0d0d"/>
 <img src="https://img.shields.io/badge/LIVES-♥♥♥-FF0000?style=flat-square&labelColor=0d0d0d"/>
 <img src="https://img.shields.io/badge/XP-627_COMMITS-FFD700?style=flat-square&labelColor=0d0d0d"/>
@@ -60,20 +58,6 @@
 
 <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Alb3rt05&show_icons=true&theme=merko&include_all_commits=true&count_private=true&hide_border=false&title_color=00FF41&icon_color=00FF41&text_color=00FF41&bg_color=0d0d0d&border_color=00FF41&custom_title=GAME+STATS"/>
 <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alb3rt05&layout=compact&langs_count=8&hide_border=false&bg_color=0d0d0d&title_color=00FF41&text_color=00FF41&border_color=00FF41&custom_title=SKILLS+TREE"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Alb3rt05&theme=green_nur" width="100%"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Alb3rt05&theme=green_nur" height="140"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Alb3rt05&theme=green_nur" height="140"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Alb3rt05&theme=green_nur&utcOffset=1" height="140"/>
 
 </div>
 
