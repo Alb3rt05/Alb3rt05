@@ -1,4 +1,4 @@
-<svg width="330" height="50" viewBox="0 0 330 50" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="50" viewBox="0 0 360 50" xmlns="http://www.w3.org/2000/svg">
   <style>
     .badge-bg {
       fill: #070707;
@@ -82,24 +82,24 @@
       100% { opacity: 1; filter: drop-shadow(0 0 4px #00FF41); }
     }
     @keyframes typewrite-cover {
-      from { x: 150px; width: 165px; }
-      to { x: 315px; width: 0px; }
+      from { x: 150px; width: 195px; }
+      to { x: 345px; width: 0px; }
     }
     @keyframes typewrite-cursor {
       from { x: 150px; }
-      to { x: 315px; }
+      to { x: 345px; }
     }
     @keyframes blink {
       50% { opacity: 0; }
     }
   </style>
-  <rect x="6" y="6" width="318" height="38" rx="4" class="badge-bg"/>
+  <rect x="6" y="6" width="348" height="38" rx="4" class="badge-bg"/>
   
   <!-- Corner Brackets -->
   <path d="M 6,14 V 6 H 14" class="bracket tl"/>
-  <path d="M 316,6 H 324 V 14" class="bracket tr"/>
+  <path d="M 346,6 H 354 V 14" class="bracket tr"/>
   <path d="M 6,36 V 44 H 14" class="bracket bl"/>
-  <path d="M 316,44 H 324 V 36" class="bracket br"/>
+  <path d="M 346,44 H 354 V 36" class="bracket br"/>
   
   <!-- Content -->
   <circle cx="22" cy="25" r="3" class="status-dot"/>
@@ -114,6 +114,6 @@
   <text x="150" y="28" class="right-text">albertocostanzo.netlify.app</text>
   
   <!-- Typing cover and cursor -->
-  <rect x="150" y="10" width="165" height="30" class="cover-rect"/>
+  <rect x="150" y="10" width="195" height="30" class="cover-rect"/>
   <rect x="150" y="19" width="6" height="12" class="cursor"/>
 </svg>
