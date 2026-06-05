@@ -9,16 +9,12 @@
 
 <br/>
 
-### 💻 SKILL TREE
 <p align="center">
-  <a href="https://skillicons.dev">
-    <b>[ FRONTEND ]</b><br>
-    <img src="https://skillicons.dev/icons?i=angular,vue,nextjs,react,ts,js,html,css,tailwind&perline=9" /><br><br>
-    <b>[ BACKEND ]</b><br>
-    <img src="https://skillicons.dev/icons?i=java,python,php,spring,quarkus,nodejs,express&perline=9" /><br><br>
-    <b>[ TOOLS & DATABASE ]</b><br>
-    <img src="https://skillicons.dev/icons?i=mongodb,redis,mysql,postgres,docker,git,github,linux,figma&perline=9" />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./terminal.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./terminal.svg">
+    <img alt="Dynamic Terminal and Skills" src="./terminal.svg">
+  </picture>
 </p>
 
 <br/>
