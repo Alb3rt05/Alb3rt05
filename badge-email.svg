@@ -1,0 +1,45 @@
+<svg width="230" height="45" viewBox="0 0 230 45" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .badge {
+      fill: #0d0d0d;
+      stroke: #FF0080;
+      stroke-width: 1.5;
+      animation: pulse-glow-pink 2.5s infinite alternate ease-in-out;
+    }
+    .left-bg {
+      fill: #FF0080;
+    }
+    .left-text {
+      fill: #0d0d0d;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    .right-text {
+      fill: #FF0080;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    @keyframes pulse-glow-pink {
+      0% {
+        stroke: #9b004a;
+        filter: drop-shadow(0 0 1px rgba(255, 0, 128, 0.2));
+      }
+      100% {
+        stroke: #FF0080;
+        filter: drop-shadow(0 0 4px rgba(255, 0, 128, 0.7));
+      }
+    }
+  </style>
+  <rect x="1" y="1" width="228" height="43" rx="6" class="badge"/>
+  <path d="M1 7 C1 3.5, 3.5 1, 7 1 H85 L70 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
+  <g transform="translate(12, 14)" stroke="#0d0d0d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1" y="2" width="14" height="11" rx="1.5"/>
+    <path d="M1 3.5l7 5 7-5"/>
+  </g>
+  <text x="34" y="27" class="left-text">EMAIL</text>
+  <text x="95" y="27" class="right-text">say hello</text>
+</svg>

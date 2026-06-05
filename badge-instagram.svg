@@ -1,0 +1,46 @@
+<svg width="260" height="45" viewBox="0 0 260 45" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .badge {
+      fill: #0d0d0d;
+      stroke: #FFD700;
+      stroke-width: 1.5;
+      animation: pulse-glow-yellow 2.5s infinite alternate ease-in-out;
+    }
+    .left-bg {
+      fill: #FFD700;
+    }
+    .left-text {
+      fill: #0d0d0d;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    .right-text {
+      fill: #FFD700;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    @keyframes pulse-glow-yellow {
+      0% {
+        stroke: #a68c00;
+        filter: drop-shadow(0 0 1px rgba(255, 215, 0, 0.2));
+      }
+      100% {
+        stroke: #FFD700;
+        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.7));
+      }
+    }
+  </style>
+  <rect x="1" y="1" width="258" height="43" rx="6" class="badge"/>
+  <path d="M1 7 C1 3.5, 3.5 1, 7 1 H110 L95 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
+  <g transform="translate(12, 14)" stroke="#0d0d0d" stroke-width="1.5" fill="none">
+    <rect x="1" y="1" width="14" height="14" rx="3.5"/>
+    <circle cx="8" cy="8" r="3"/>
+    <circle cx="12" cy="4" r="0.75" fill="#0d0d0d"/>
+  </g>
+  <text x="32" y="27" class="left-text">INSTAGRAM</text>
+  <text x="118" y="27" class="right-text">0__albert__5</text>
+</svg>

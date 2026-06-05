@@ -1,0 +1,45 @@
+<svg width="310" height="45" viewBox="0 0 310 45" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .badge {
+      fill: #0d0d0d;
+      stroke: #00FF41;
+      stroke-width: 1.5;
+      animation: pulse-glow-green 2.5s infinite alternate ease-in-out;
+    }
+    .left-bg {
+      fill: #00FF41;
+    }
+    .left-text {
+      fill: #0d0d0d;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    .right-text {
+      fill: #00FF41;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    @keyframes pulse-glow-green {
+      0% {
+        stroke: #008f25;
+        filter: drop-shadow(0 0 1px rgba(0, 255, 65, 0.2));
+      }
+      100% {
+        stroke: #00FF41;
+        filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.7));
+      }
+    }
+  </style>
+  <rect x="1" y="1" width="308" height="43" rx="6" class="badge"/>
+  <path d="M1 7 C1 3.5, 3.5 1, 7 1 H110 L95 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
+  <g transform="translate(12, 14)" stroke="#0d0d0d" stroke-width="1.5" fill="none">
+    <circle cx="8" cy="8" r="6"/>
+    <path d="M2 8h12M8 2a14 14 0 0 0 0 12 14 14 0 0 0 0-12"/>
+  </g>
+  <text x="34" y="27" class="left-text">PORTFOLIO</text>
+  <text x="115" y="27" class="right-text">albertocostanzo.netlify.app</text>
+</svg>

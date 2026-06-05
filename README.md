@@ -32,22 +32,23 @@
 
 <p align="center">
   <a href="https://albertocostanzo.netlify.app">
-    <img src="https://img.shields.io/badge/PORTFOLIO-albertocostanzo.netlify.app-00FF41?style=for-the-badge&logo=dev.to&logoColor=black&labelColor=0d0d0d" alt="Portfolio"/>
+    <img src="./badge-portfolio.svg" alt="Portfolio" />
   </a>
   <a href="mailto:alberto.costanzo05@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-say%20hello-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d" alt="Email"/>
+    <img src="./badge-email.svg" alt="Email" />
   </a>
   <a href="https://instagram.com/0__albert__5">
-    <img src="https://img.shields.io/badge/INSTAGRAM-0__albert__5-FFD700?style=for-the-badge&logo=instagram&logoColor=black&labelColor=0d0d0d" alt="Instagram"/>
+    <img src="./badge-instagram.svg" alt="Instagram" />
   </a>
 </p>
 
-<br/>
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Alb3rt05.Alb3rt05&left_color=0d0d0d&right_color=00FF41&left_text=VISITORS)
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Alb3rt05.Alb3rt05&amp;left_color=0d0d0d&amp;right_color=00FF41&amp;left_text=VISITORS" alt="Visitor Badge" />
+</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=3000&color=FF0080&center=true&vCenter=true&width=400&lines=Game+Over+%C2%B7+See+you+next+commit+%F0%9F%91%BE" alt="Game Over" />
+  <img src="./game-over.svg" alt="Game Over" />
 </p>
 
 </div>
+
