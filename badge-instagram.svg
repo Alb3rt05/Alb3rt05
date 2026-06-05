@@ -4,10 +4,12 @@
       fill: #0d0d0d;
       stroke: #FFD700;
       stroke-width: 1.5;
+      transition: all 0.3s ease-in-out;
       animation: pulse-glow-yellow 2.5s infinite alternate ease-in-out;
     }
     .left-bg {
       fill: #FFD700;
+      transition: all 0.3s ease-in-out;
     }
     .left-text {
       fill: #0d0d0d;
@@ -15,6 +17,7 @@
       font-size: 11px;
       font-weight: bold;
       letter-spacing: 1.5px;
+      transition: all 0.3s ease-in-out;
     }
     .right-text {
       fill: #FFD700;
@@ -22,7 +25,45 @@
       font-size: 11px;
       font-weight: bold;
       letter-spacing: 1px;
+      transition: all 0.3s ease-in-out;
     }
+    .icon {
+      stroke: #0d0d0d;
+      stroke-width: 1.5;
+      fill: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .dot {
+      fill: #0d0d0d;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover States triggered by parent SVG hover */
+    svg:hover .badge {
+      fill: #121212;
+      stroke: #FFD700;
+      stroke-width: 2.0;
+      animation: pulse-glow-yellow-hover 1s infinite alternate ease-in-out;
+    }
+    svg:hover .left-bg {
+      fill: #ffffff;
+    }
+    svg:hover .left-text {
+      fill: #0d0d0d;
+    }
+    svg:hover .right-text {
+      fill: #ffffff;
+      text-shadow: 0 0 8px #FFD700;
+    }
+    svg:hover .icon {
+      stroke: #0d0d0d;
+      transform: scale(1.1);
+      transform-origin: 20px 22px;
+    }
+    svg:hover .dot {
+      fill: #0d0d0d;
+    }
+
     @keyframes pulse-glow-yellow {
       0% {
         stroke: #a68c00;
@@ -30,16 +71,24 @@
       }
       100% {
         stroke: #FFD700;
-        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.7));
+        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
+      }
+    }
+    @keyframes pulse-glow-yellow-hover {
+      0% {
+        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
+      }
+      100% {
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.9));
       }
     }
   </style>
   <rect x="1" y="1" width="258" height="43" rx="6" class="badge"/>
   <path d="M1 7 C1 3.5, 3.5 1, 7 1 H110 L95 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
-  <g transform="translate(12, 14)" stroke="#0d0d0d" stroke-width="1.5" fill="none">
-    <rect x="1" y="1" width="14" height="14" rx="3.5"/>
-    <circle cx="8" cy="8" r="3"/>
-    <circle cx="12" cy="4" r="0.75" fill="#0d0d0d"/>
+  <g transform="translate(12, 14)">
+    <rect x="1" y="1" width="14" height="14" rx="3.5" class="icon"/>
+    <circle cx="8" cy="8" r="3" class="icon"/>
+    <circle cx="12" cy="4" r="0.75" class="dot"/>
   </g>
   <text x="32" y="27" class="left-text">INSTAGRAM</text>
   <text x="118" y="27" class="right-text">0__albert__5</text>

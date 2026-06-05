@@ -43,7 +43,7 @@
 </p>
 
 <p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Alb3rt05.Alb3rt05&amp;left_color=0d0d0d&amp;right_color=00FF41&amp;left_text=VISITORS" alt="Visitor Badge" />
+  <img src="https://komarev.com/ghpvc/?username=Alb3rt05&amp;color=00ff41&amp;style=for-the-badge&amp;label=VISITORS&amp;base=44" alt="Visitor Badge" />
 </p>
 
 <p align="center">
