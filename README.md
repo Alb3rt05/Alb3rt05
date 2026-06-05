@@ -43,7 +43,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.counterapi.dev%2Fv1%2FAlb3rt05%2Fviews%2Fup&amp;query=%24.value&amp;style=for-the-badge&amp;color=00ff41&amp;label=VISITORS&amp;labelColor=0d0d0d" alt="Visitor Badge" />
+  <img src="https://hits.sh/github.com/Alb3rt05/Alb3rt05.svg?style=for-the-badge&amp;color=00ff41&amp;labelColor=0d0d0d&amp;label=VISITORS&amp;extraCount=44" alt="Visitor Badge" />
 </p>
 
 <p align="center">
