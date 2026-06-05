@@ -18,14 +18,7 @@
 </p>
 
 <br/>
----
 
-### 📊 GAME STATS
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Alb3rt05&show_icons=true&hide_border=true&title_color=00FF41&icon_color=00FF41&text_color=a9fef7&bg_color=0d0d0d&include_all_commits=true&count_private=true&custom_title=►%20GITHUB%20STATS&ring_color=FF0080"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Alb3rt05&layout=compact&langs_count=6&hide_border=true&bg_color=0d0d0d&title_color=00FF41&text_color=a9fef7&custom_title=►%20TOP%20LANGUAGES"/>
-</p>
 
 <p align="center">
   <picture>
