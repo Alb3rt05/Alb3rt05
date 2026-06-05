@@ -1,0 +1,184 @@
+<svg width="680" height="520" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Alberto Costanzo — Fullstack Developer terminal card</title>
+<desc>Animated terminal card showing Alberto's skills and links</desc>
+
+<style>
+  .bg { fill: #0d0d0d; }
+  .bar-top { fill: #1a1a1a; }
+  .bar-line { fill: none; stroke: #222; stroke-width: 1; }
+  .dot-r { fill: #ff5f56; }
+  .dot-y { fill: #ffbd2e; }
+  .dot-g { fill: #27c93f; }
+  .bar-title { fill: #444; font-family: 'Courier New', monospace; font-size: 11px; text-anchor: middle; }
+  .name { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 20px; font-weight: bold; letter-spacing: 4px; text-anchor: middle; }
+  .sub { fill: #444; font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 3px; text-anchor: middle; }
+  .divider { stroke: #1e1e1e; stroke-width: 1; }
+  .prompt { fill: #00FF41; font-family: 'Courier New', monospace; font-size: 12px; }
+  .cmd { fill: #666; font-family: 'Courier New', monospace; font-size: 12px; }
+  .val { fill: #ccc; font-family: 'Courier New', monospace; font-size: 12px; }
+  .pink { fill: #FF0080; font-family: 'Courier New', monospace; font-size: 12px; }
+  .gold { fill: #FFD700; font-family: 'Courier New', monospace; font-size: 12px; }
+  .blue { fill: #00BFFF; font-family: 'Courier New', monospace; font-size: 12px; }
+  .skill-lbl { fill: #444; font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 2px; }
+  .skill-name { fill: #666; font-family: 'Courier New', monospace; font-size: 10px; }
+  .track { fill: #1a1a1a; }
+  .stat-val { font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; text-anchor: middle; }
+  .stat-lbl { fill: #444; font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 1px; text-anchor: middle; }
+  .stat-box { fill: #111; stroke: #1e1e1e; stroke-width: 1; }
+  .link-box { fill: #111; stroke: #222; stroke-width: 1; }
+  .link-txt { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 1px; text-anchor: middle; }
+  .blink { animation: blink 1s step-end infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  .l1 { opacity: 0; animation: fadein .1s 0.3s forwards; }
+  .l2 { opacity: 0; animation: fadein .1s 0.7s forwards; }
+  .l3 { opacity: 0; animation: fadein .1s 1.3s forwards; }
+  .l4 { opacity: 0; animation: fadein .1s 1.7s forwards; }
+  .l5 { opacity: 0; animation: fadein .1s 2.2s forwards; }
+  .l6 { opacity: 0; animation: fadein .1s 2.6s forwards; }
+  .l7 { opacity: 0; animation: fadein .1s 3.1s forwards; }
+  .l8 { opacity: 0; animation: fadein .1s 3.5s forwards; }
+  @keyframes fadein { to { opacity: 1; } }
+
+  .b1 { animation: bar1 1s 3.8s cubic-bezier(.4,0,.2,1) both; }
+  .b2 { animation: bar2 1s 3.9s cubic-bezier(.4,0,.2,1) both; }
+  .b3 { animation: bar3 1s 4.0s cubic-bezier(.4,0,.2,1) both; }
+  .b4 { animation: bar4 1s 4.1s cubic-bezier(.4,0,.2,1) both; }
+  .b5 { animation: bar5 1s 4.2s cubic-bezier(.4,0,.2,1) both; }
+  .b6 { animation: bar6 1s 4.3s cubic-bezier(.4,0,.2,1) both; }
+  .b7 { animation: bar7 1s 4.4s cubic-bezier(.4,0,.2,1) both; }
+  .b8 { animation: bar8 1s 4.5s cubic-bezier(.4,0,.2,1) both; }
+  @keyframes bar1 { from{width:0} to{width:189px} }
+  @keyframes bar2 { from{width:0} to{width:178px} }
+  @keyframes bar3 { from{width:0} to{width:168px} }
+  @keyframes bar4 { from{width:0} to{width:185px} }
+  @keyframes bar5 { from{width:0} to{width:172px} }
+  @keyframes bar6 { from{width:0} to{width:157px} }
+  @keyframes bar7 { from{width:0} to{width:164px} }
+  @keyframes bar8 { from{width:0} to{width:168px} }
+
+  .stats-in { opacity: 0; animation: fadein .4s 5.2s forwards; }
+  .links-in { opacity: 0; animation: fadein .4s 5.6s forwards; }
+</style>
+
+<rect width="680" height="520" rx="12" class="bg"/>
+<rect x="0" y="0" width="680" height="36" rx="12" class="bar-top"/>
+<rect x="0" y="24" width="680" height="12" class="bar-top"/>
+<line x1="0" y1="36" x2="680" y2="36" class="bar-line"/>
+<circle cx="20" cy="18" r="5.5" class="dot-r"/>
+<circle cx="38" cy="18" r="5.5" class="dot-y"/>
+<circle cx="56" cy="18" r="5.5" class="dot-g"/>
+<text x="340" y="22" class="bar-title">alb3rt05 — bash</text>
+
+<text x="340" y="74" class="name">ALBERTO<tspan class="blink">_</tspan></text>
+<text x="340" y="91" class="sub">FULLSTACK DEVELOPER</text>
+
+<line x1="24" y1="103" x2="656" y2="103" class="divider"/>
+
+<g class="l1">
+  <text x="28" y="122" class="prompt">$</text>
+  <text x="42" y="122" class="cmd">whoami</text>
+</g>
+<g class="l2">
+  <text x="28" y="139" class="prompt">→</text>
+  <text x="42" y="139" class="val">Fullstack dev · Angular · Vue · Next.js · Java · Python</text>
+</g>
+<g class="l3">
+  <text x="28" y="158" class="prompt">$</text>
+  <text x="42" y="158" class="cmd">cat status.txt</text>
+</g>
+<g class="l4">
+  <text x="28" y="175" class="prompt">→</text>
+  <text x="42" y="175" class="pink">ONLINE</text>
+  <text x="96" y="175" class="val"> · Building things that matter</text>
+</g>
+<g class="l5">
+  <text x="28" y="194" class="prompt">$</text>
+  <text x="42" y="194" class="cmd">git log --oneline -1</text>
+</g>
+<g class="l6">
+  <text x="28" y="211" class="prompt">→</text>
+  <text x="42" y="211" class="gold">627 commits</text>
+  <text x="131" y="211" class="val"> · still going strong</text>
+</g>
+<g class="l7">
+  <text x="28" y="230" class="prompt">$</text>
+  <text x="42" y="230" class="cmd">open portfolio</text>
+</g>
+<g class="l8">
+  <text x="28" y="247" class="prompt">→</text>
+  <text x="42" y="247" class="blue">albertocostanzo.netlify.app</text>
+  <text x="242" y="247" class="blink" style="fill:#00FF41;font-family:'Courier New',monospace;font-size:12px"> ▌</text>
+</g>
+
+<line x1="24" y1="260" x2="656" y2="260" class="divider"/>
+
+<text x="28" y="278" class="skill-lbl">FRONTEND</text>
+<text x="352" y="278" class="skill-lbl">BACKEND &amp; DATA</text>
+
+<text x="28" y="295" class="skill-name">Angular</text>
+<rect x="96" y="287" width="210" height="5" rx="2" class="track"/>
+<rect x="96" y="287" height="5" rx="2" fill="#DD0031" class="b1"/>
+
+<text x="28" y="312" class="skill-name">Vue</text>
+<rect x="96" y="304" width="210" height="5" rx="2" class="track"/>
+<rect x="96" y="304" height="5" rx="2" fill="#4FC08D" class="b2"/>
+
+<text x="28" y="329" class="skill-name">Next.js</text>
+<rect x="96" y="321" width="210" height="5" rx="2" class="track"/>
+<rect x="96" y="321" height="5" rx="2" fill="#aaaaaa" class="b3"/>
+
+<text x="28" y="346" class="skill-name">TypeScript</text>
+<rect x="96" y="338" width="210" height="5" rx="2" class="track"/>
+<rect x="96" y="338" height="5" rx="2" fill="#007ACC" class="b4"/>
+
+<text x="352" y="295" class="skill-name">Java</text>
+<rect x="410" y="287" width="210" height="5" rx="2" class="track"/>
+<rect x="410" y="287" height="5" rx="2" fill="#ED8B00" class="b5"/>
+
+<text x="352" y="312" class="skill-name">Python</text>
+<rect x="410" y="304" width="210" height="5" rx="2" class="track"/>
+<rect x="410" y="304" height="5" rx="2" fill="#3776AB" class="b6"/>
+
+<text x="352" y="329" class="skill-name">MongoDB</text>
+<rect x="410" y="321" width="210" height="5" rx="2" class="track"/>
+<rect x="410" y="321" height="5" rx="2" fill="#47A248" class="b7"/>
+
+<text x="352" y="346" class="skill-name">SQL</text>
+<rect x="410" y="338" width="210" height="5" rx="2" class="track"/>
+<rect x="410" y="338" height="5" rx="2" fill="#4479A1" class="b8"/>
+
+<line x1="24" y1="360" x2="656" y2="360" class="divider"/>
+
+<g class="stats-in">
+  <rect x="24" y="370" width="144" height="52" rx="8" class="stat-box"/>
+  <text x="96" y="392" class="stat-val" fill="#00FF41">627</text>
+  <text x="96" y="410" class="stat-lbl">COMMITS</text>
+
+  <rect x="180" y="370" width="144" height="52" rx="8" class="stat-box"/>
+  <text x="252" y="392" class="stat-val" fill="#FF0080">3+</text>
+  <text x="252" y="410" class="stat-lbl">YEARS XP</text>
+
+  <rect x="336" y="370" width="144" height="52" rx="8" class="stat-box"/>
+  <text x="408" y="392" class="stat-val" fill="#FFD700">99</text>
+  <text x="408" y="410" class="stat-lbl">LVL</text>
+
+  <rect x="492" y="370" width="164" height="52" rx="8" class="stat-box"/>
+  <text x="574" y="392" class="stat-val" fill="#00BFFF">∞</text>
+  <text x="574" y="410" class="stat-lbl">COFFEE</text>
+</g>
+
+<line x1="24" y1="434" x2="656" y2="434" class="divider"/>
+
+<g class="links-in">
+  <rect x="24" y="446" width="190" height="32" rx="6" class="link-box"/>
+  <text x="119" y="467" class="link-txt" fill="#00FF41">▶ PORTFOLIO</text>
+
+  <rect x="245" y="446" width="190" height="32" rx="6" class="link-box"/>
+  <text x="340" y="467" class="link-txt" fill="#FF0080">✉ EMAIL</text>
+
+  <rect x="466" y="446" width="190" height="32" rx="6" class="link-box"/>
+  <text x="561" y="467" class="link-txt" fill="#FFD700">◈ INSTAGRAM</text>
+</g>
+
+</svg>
