@@ -8,7 +8,7 @@ on:
   # Allows to manually run the job at any time
   workflow_dispatch:
   
-  # Run on every push on the main branch
+  # Run on every p ush on the main branch
   push:
     branches:
     - main

@@ -1,5 +1,8 @@
 <div align="center">
 
+<!-- Waving header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&height=120&section=header"/>
+
 <!-- Dynamic Terminal Header -->
 <a href="https://albertocostanzo.netlify.app">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=00FF41&center=true&vCenter=true&width=600&height=60&lines=%3E_+$+whoami;%3E_+Alberto+Costanzo;%3E_+Fullstack+Developer;%3E_+Building+things+that+matter..." alt="Typing SVG" />
@@ -23,7 +26,6 @@
 </p>
 
 <br/>
-
 ---
 
 ### 📊 GAME STATS
@@ -34,6 +36,8 @@
 </p>
 
 <p align="center">
+  <img width="80%" src="https://github-readme-activity-graph.vercel.app/graph?username=Alb3rt05&theme=merko&bg_color=0d0d0d&color=00FF41&line=00FF41&point=FF0080&area=true&hide_border=true&custom_title=►%20COMMIT%20HISTORY"/>
+  <br/><br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alb3rt05/Alb3rt05/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alb3rt05/Alb3rt05/output/github-contribution-grid-snake.svg">
