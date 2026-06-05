@@ -1,87 +1,119 @@
-<svg width="310" height="45" viewBox="0 0 310 45" xmlns="http://www.w3.org/2000/svg">
+<svg width="330" height="50" viewBox="0 0 330 50" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .badge {
-      fill: #0d0d0d;
-      stroke: #00FF41;
-      stroke-width: 1.5;
+    .badge-bg {
+      fill: #070707;
+      stroke: #161616;
+      stroke-width: 1;
       transition: all 0.3s ease-in-out;
-      animation: pulse-glow-green 2.5s infinite alternate ease-in-out;
     }
-    .left-bg {
+    .bracket {
+      stroke: #00FF41;
+      stroke-width: 2;
+      fill: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .status-dot {
       fill: #00FF41;
+      animation: pulse-dot 1.5s infinite alternate ease-in-out;
+    }
+    .icon {
+      stroke: #888;
+      stroke-width: 1.5;
+      fill: none;
       transition: all 0.3s ease-in-out;
     }
     .left-text {
-      fill: #0d0d0d;
+      fill: #888;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
       letter-spacing: 1.5px;
+      transition: all 0.3s ease-in-out;
+    }
+    .separator {
+      stroke: #161616;
+      stroke-width: 1;
       transition: all 0.3s ease-in-out;
     }
     .right-text {
       fill: #00FF41;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
       letter-spacing: 0.5px;
-      transition: all 0.3s ease-in-out;
     }
-    .icon {
-      stroke: #0d0d0d;
-      stroke-width: 1.5;
-      fill: none;
-      transition: all 0.3s ease-in-out;
+    .cover-rect {
+      fill: #070707;
+      animation: typewrite-cover 2s steps(27) 0.5s forwards;
+      transition: fill 0.3s ease-in-out;
+    }
+    .cursor {
+      fill: #00FF41;
+      animation: typewrite-cursor 2s steps(27) 0.5s forwards, blink 1s step-start infinite;
     }
 
-    /* Hover States triggered by parent SVG hover */
-    svg:hover .badge {
-      fill: #121212;
+    /* Hover States */
+    svg:hover .badge-bg {
+      fill: #0e0e0e;
       stroke: #00FF41;
-      stroke-width: 2.0;
-      animation: pulse-glow-green-hover 1s infinite alternate ease-in-out;
     }
-    svg:hover .left-bg {
-      fill: #ffffff;
+    svg:hover .separator {
+      stroke: #00FF41;
+      opacity: 0.5;
     }
     svg:hover .left-text {
-      fill: #0d0d0d;
-    }
-    svg:hover .right-text {
       fill: #ffffff;
-      text-shadow: 0 0 8px #00FF41;
     }
     svg:hover .icon {
-      stroke: #0d0d0d;
-      transform: scale(1.1) rotate(5deg);
-      transform-origin: 20px 22px;
+      stroke: #ffffff;
+      transform: scale(1.05);
+      transform-origin: 43px 25px;
     }
+    svg:hover .cover-rect {
+      fill: #0e0e0e;
+    }
+    svg:hover .tl { transform: translate(-2px, -2px); }
+    svg:hover .tr { transform: translate(2px, -2px); }
+    svg:hover .bl { transform: translate(-2px, 2px); }
+    svg:hover .br { transform: translate(2px, 2px); }
 
-    @keyframes pulse-glow-green {
-      0% {
-        stroke: #008f25;
-        filter: drop-shadow(0 0 1px rgba(0, 255, 65, 0.2));
-      }
-      100% {
-        stroke: #00FF41;
-        filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.6));
-      }
+    @keyframes pulse-dot {
+      0% { opacity: 0.3; filter: drop-shadow(0 0 1px #00FF41); }
+      100% { opacity: 1; filter: drop-shadow(0 0 4px #00FF41); }
     }
-    @keyframes pulse-glow-green-hover {
-      0% {
-        filter: drop-shadow(0 0 4px rgba(0, 255, 65, 0.6));
-      }
-      100% {
-        filter: drop-shadow(0 0 10px rgba(0, 255, 65, 0.9));
-      }
+    @keyframes typewrite-cover {
+      from { x: 150px; width: 165px; }
+      to { x: 315px; width: 0px; }
+    }
+    @keyframes typewrite-cursor {
+      from { x: 150px; }
+      to { x: 315px; }
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
     }
   </style>
-  <rect x="1" y="1" width="308" height="43" rx="6" class="badge"/>
-  <path d="M1 7 C1 3.5, 3.5 1, 7 1 H110 L95 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
-  <g transform="translate(12, 14)">
+  <rect x="6" y="6" width="318" height="38" rx="4" class="badge-bg"/>
+  
+  <!-- Corner Brackets -->
+  <path d="M 6,14 V 6 H 14" class="bracket tl"/>
+  <path d="M 316,6 H 324 V 14" class="bracket tr"/>
+  <path d="M 6,36 V 44 H 14" class="bracket bl"/>
+  <path d="M 316,44 H 324 V 36" class="bracket br"/>
+  
+  <!-- Content -->
+  <circle cx="22" cy="25" r="3" class="status-dot"/>
+  <g transform="translate(35, 17)">
     <circle cx="8" cy="8" r="6" class="icon"/>
     <path d="M2 8h12M8 2a14 14 0 0 0 0 12 14 14 0 0 0 0-12" class="icon"/>
   </g>
-  <text x="34" y="27" class="left-text">PORTFOLIO</text>
-  <text x="115" y="27" class="right-text">albertocostanzo.netlify.app</text>
+  <text x="58" y="28" class="left-text">PORTFOLIO</text>
+  
+  <line x1="135" y1="12" x2="135" y2="38" class="separator"/>
+  
+  <text x="150" y="28" class="right-text">albertocostanzo.netlify.app</text>
+  
+  <!-- Typing cover and cursor -->
+  <rect x="150" y="10" width="165" height="30" class="cover-rect"/>
+  <rect x="150" y="19" width="6" height="12" class="cursor"/>
 </svg>

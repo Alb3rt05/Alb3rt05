@@ -43,7 +43,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Alb3rt05&amp;color=00ff41&amp;style=for-the-badge&amp;label=VISITORS&amp;base=44" alt="Visitor Badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.counterapi.dev%2Fv1%2FAlb3rt05%2Fviews%2Fup&amp;query=%24.value&amp;style=for-the-badge&amp;color=00ff41&amp;label=VISITORS&amp;labelColor=0d0d0d" alt="Visitor Badge" />
 </p>
 
 <p align="center">

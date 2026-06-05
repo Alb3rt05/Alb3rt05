@@ -1,95 +1,127 @@
-<svg width="260" height="45" viewBox="0 0 260 45" xmlns="http://www.w3.org/2000/svg">
+<svg width="270" height="50" viewBox="0 0 270 50" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .badge {
-      fill: #0d0d0d;
+    .badge-bg {
+      fill: #070707;
+      stroke: #161616;
+      stroke-width: 1;
+      transition: all 0.3s ease-in-out;
+    }
+    .bracket {
       stroke: #FFD700;
-      stroke-width: 1.5;
+      stroke-width: 2;
+      fill: none;
       transition: all 0.3s ease-in-out;
-      animation: pulse-glow-yellow 2.5s infinite alternate ease-in-out;
     }
-    .left-bg {
+    .status-dot {
       fill: #FFD700;
-      transition: all 0.3s ease-in-out;
-    }
-    .left-text {
-      fill: #0d0d0d;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
-      font-weight: bold;
-      letter-spacing: 1.5px;
-      transition: all 0.3s ease-in-out;
-    }
-    .right-text {
-      fill: #FFD700;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 11px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: all 0.3s ease-in-out;
+      animation: pulse-dot 1.5s infinite alternate ease-in-out;
     }
     .icon {
-      stroke: #0d0d0d;
+      stroke: #888;
       stroke-width: 1.5;
       fill: none;
       transition: all 0.3s ease-in-out;
     }
     .dot {
-      fill: #0d0d0d;
+      fill: #888;
       transition: all 0.3s ease-in-out;
     }
-
-    /* Hover States triggered by parent SVG hover */
-    svg:hover .badge {
-      fill: #121212;
-      stroke: #FFD700;
-      stroke-width: 2.0;
-      animation: pulse-glow-yellow-hover 1s infinite alternate ease-in-out;
+    .left-text {
+      fill: #888;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      transition: all 0.3s ease-in-out;
     }
-    svg:hover .left-bg {
-      fill: #ffffff;
+    .separator {
+      stroke: #161616;
+      stroke-width: 1;
+      transition: all 0.3s ease-in-out;
+    }
+    .right-text {
+      fill: #FFD700;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cover-rect {
+      fill: #070707;
+      animation: typewrite-cover 1.5s steps(12) 0.5s forwards;
+      transition: fill 0.3s ease-in-out;
+    }
+    .cursor {
+      fill: #FFD700;
+      animation: typewrite-cursor 1.5s steps(12) 0.5s forwards, blink 1s step-start infinite;
+    }
+
+    /* Hover States */
+    svg:hover .badge-bg {
+      fill: #0e0e0e;
+      stroke: #FFD700;
+    }
+    svg:hover .separator {
+      stroke: #FFD700;
+      opacity: 0.5;
     }
     svg:hover .left-text {
-      fill: #0d0d0d;
-    }
-    svg:hover .right-text {
       fill: #ffffff;
-      text-shadow: 0 0 8px #FFD700;
     }
     svg:hover .icon {
-      stroke: #0d0d0d;
-      transform: scale(1.1);
-      transform-origin: 20px 22px;
+      stroke: #ffffff;
+      transform: scale(1.05);
+      transform-origin: 43px 25px;
     }
     svg:hover .dot {
-      fill: #0d0d0d;
+      fill: #ffffff;
     }
+    svg:hover .cover-rect {
+      fill: #0e0e0e;
+    }
+    svg:hover .tl { transform: translate(-2px, -2px); }
+    svg:hover .tr { transform: translate(2px, -2px); }
+    svg:hover .bl { transform: translate(-2px, 2px); }
+    svg:hover .br { transform: translate(2px, 2px); }
 
-    @keyframes pulse-glow-yellow {
-      0% {
-        stroke: #a68c00;
-        filter: drop-shadow(0 0 1px rgba(255, 215, 0, 0.2));
-      }
-      100% {
-        stroke: #FFD700;
-        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
-      }
+    @keyframes pulse-dot {
+      0% { opacity: 0.3; filter: drop-shadow(0 0 1px #FFD700); }
+      100% { opacity: 1; filter: drop-shadow(0 0 4px #FFD700); }
     }
-    @keyframes pulse-glow-yellow-hover {
-      0% {
-        filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
-      }
-      100% {
-        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.9));
-      }
+    @keyframes typewrite-cover {
+      from { x: 142px; width: 110px; }
+      to { x: 252px; width: 0px; }
+    }
+    @keyframes typewrite-cursor {
+      from { x: 142px; }
+      to { x: 252px; }
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
     }
   </style>
-  <rect x="1" y="1" width="258" height="43" rx="6" class="badge"/>
-  <path d="M1 7 C1 3.5, 3.5 1, 7 1 H110 L95 44 H7 C3.5 44, 1 41.5, 1 38 Z" class="left-bg"/>
-  <g transform="translate(12, 14)">
+  <rect x="6" y="6" width="258" height="38" rx="4" class="badge-bg"/>
+  
+  <!-- Corner Brackets -->
+  <path d="M 6,14 V 6 H 14" class="bracket tl"/>
+  <path d="M 256,6 H 264 V 14" class="bracket tr"/>
+  <path d="M 6,36 V 44 H 14" class="bracket bl"/>
+  <path d="M 256,44 H 264 V 36" class="bracket br"/>
+  
+  <!-- Content -->
+  <circle cx="22" cy="25" r="3" class="status-dot"/>
+  <g transform="translate(35, 17)">
     <rect x="1" y="1" width="14" height="14" rx="3.5" class="icon"/>
     <circle cx="8" cy="8" r="3" class="icon"/>
     <circle cx="12" cy="4" r="0.75" class="dot"/>
   </g>
-  <text x="32" y="27" class="left-text">INSTAGRAM</text>
-  <text x="118" y="27" class="right-text">0__albert__5</text>
+  <text x="58" y="28" class="left-text">INSTAGRAM</text>
+  
+  <line x1="130" y1="12" x2="130" y2="38" class="separator"/>
+  
+  <text x="142" y="28" class="right-text">0__albert__5</text>
+  
+  <!-- Typing cover and cursor -->
+  <rect x="142" y="10" width="110" height="30" class="cover-rect"/>
+  <rect x="142" y="19" width="6" height="12" class="cursor"/>
 </svg>
