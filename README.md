@@ -30,8 +30,6 @@
 
 ---
 
-### 🌐 CONNECT WITH ME
-
 <p align="center">
   <a href="https://albertocostanzo.netlify.app">
     <img src="https://img.shields.io/badge/PORTFOLIO-albertocostanzo.netlify.app-00FF41?style=for-the-badge&logo=dev.to&logoColor=black&labelColor=0d0d0d" alt="Portfolio"/>
